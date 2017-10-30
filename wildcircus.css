@@ -78,7 +78,7 @@ a{
     padding-left: 20px;
 }
 
-.section {
+#Performances, #About_us, #Prices, #Contact {
 	margin: 10px 10px 10px 50px;
 	padding: 10px;
 	width: 20%;	

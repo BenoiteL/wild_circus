@@ -110,20 +110,16 @@ h3{
 	margin: 20px;
 }
 
-img{
-	min-width: 200px;
-	height: auto;
-}
-
 table {
     border-collapse: collapse;
+	border: 1px solid #839FB5;
     empty-cells: hide;
     width: 60%;
     margin-left: 50px;
 }
 
 td, th {
-    border: 1px solid white;
+    border: 1px solid #839FB5;
     width: 5%;
     text-align: center;
 }

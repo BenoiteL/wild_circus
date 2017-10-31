@@ -19,6 +19,7 @@ body {
 }
 
 header{
+
 	background-color: #240700;
 	display: flex;
 	flex-direction: column;
@@ -27,33 +28,33 @@ header{
 }
 
 #haut{
-	background: no-repeat url("images/fond.jpg");
-	background-size: 100%;
+	background:no-repeat url("images/fond5.jpg")center;
 	margin: auto;
-	height: 500px;
-	width: 90%;
+	max-height: 500px;
+	width: 95%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	border:double #F1A31D 10px;
+	border-radius: 10px;
 	}
 
 h1{
-	background-color: rgba(58,9,5,0.7);
+	
 	color: rgb(241,114,6);
 	font-size: 6em;
-	border:double #F1A31D 10px;
-	border-radius: 30px;
-	width: 30%;
+	width: 90%;
 	height: 150px;
 	text-align: center;
 	margin: 50px;
 	padding: 5px;
+	border: solid white;
 
 }
 
 #presentation{
-	background-color: rgba(58,9,5,0.7);
+	background-color: rgb(36,7,0);
 	color: rgb(241,114,6);
 	font-size: 2em;
 	text-align: center;

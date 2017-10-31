@@ -6,16 +6,15 @@
 }
 
 * {
-	border: solid;
+	border: none;
 	margin:0;
 }
 
 body {
-	font-family : "amatic_scregular", arial;
+	font-family : "amatic_scregular", "Comic Sans MS";
 	font-size: 1.5em;
 	color: #F1A31D;
 	background-color: #240700;
-	border: solid;
 	overflow: auto;
 }
 
@@ -38,7 +37,7 @@ header{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	max-height: 700px;
+	max-height: 500px;
 }
 
 h1{
@@ -67,7 +66,10 @@ nav{
 
 a{
 	color: #839FB5;
-	margin-left: 10px;
+	margin: 10px;
+	padding: 10px;
+	font-family: "Comic Sans MS";
+	font-size: 0.6em;
 }
 
 .nav {
@@ -76,9 +78,10 @@ a{
     background-repeat: no-repeat; 
     background-position: left center;
     padding-left: 20px;
+	margin: 10px;
 }
 
-#Performances, #About_us, #Prices, #Contact {
+#Performances, #About_us, #Prices, #Contact_Us {
 	margin: 10px 10px 10px 50px;
 	padding: 10px;
 	width: 20%;	
@@ -89,7 +92,7 @@ a{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin: 20px;
+	margin: 60px;
 }
 
 #laugh, #dream, #marvel{
@@ -97,11 +100,20 @@ a{
 	max-width: 350px;
 	min-width: 220px;
 	padding: 10px;
+	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border : solid #F17206;
 	box-shadow: 20px 10px #F5AF30;
+}
+
+p{
+	margin: 10px;
+	font-family: "Comic Sans MS";
+	font-size: 0.6em;
+	padding: 10px;
+	text-align: justify;
 }
 
 h3{
@@ -110,12 +122,24 @@ h3{
 	margin: 20px;
 }
 
+#About, #Contact{
+	background-color: #862605;
+}
+
+#text_about{
+	margin: auto;
+	font-family: "Comic Sans MS";
+	font-size: 0.6em;
+	padding: 10px;
+	text-align: justify;
+	width: 70%;
+}
+
 table {
-    border-collapse: collapse;
-	border: 1px solid #839FB5;
+    border-collapse: separate;
     empty-cells: hide;
     width: 60%;
-    margin-left: 50px;
+    margin:auto;
 }
 
 td, th {
@@ -125,10 +149,19 @@ td, th {
 }
 
 #formulaire {
-  margin: 10px 50px;
+  margin: auto;
   width:20%; 
+  padding: 10px;
+  text-align: center;
 }
 
-p{
-	margin: 10px;
+#message, input{
+  margin: 10px;
+  background-color: #F1A31D;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+footer{
+
 }

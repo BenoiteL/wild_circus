@@ -1,6 +1,6 @@
 /* Ecris ici ton code CSS */
 @font-face {
-    font-family: 'amatic_scregular';
+    font-family: 'Amatic SC';
     src: url('font/amaticsc-regular-webfont.woff2') format('woff2'),
          url('font/amaticsc-regular-webfont.woff') format('woff');
 }
@@ -11,47 +11,31 @@
 }
 
 body {
-	font-family : "amatic_scregular", "Comic Sans MS";
-	font-size: 1.5em;
+	font-family : "Amatic SC", "Comic Sans MS";
+	font-size: 1em;
 	color: #F1A31D;
 	background-color: #240700;
 	overflow: auto;
 }
 
-header{
-
-	background-color: #240700;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	height: auto;
-	background-color: #240700;
-
-}
-
-#haut{
-<<<<<<< HEAD
-	width: 90%;
-	margin: auto;
-	display: flex;
-}
-#circus{
-	width: 100%;
-	height: auto;
-}
-#milieu{
-	width: 90%;
-	margin: auto;
-	max-height: 500px;
-	width: 95%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+@media all and (max-width: 1024px) {
+   	body{
+		font-size: 0.6em;
 	}
+}
+
+header{
+	background-color: #240700;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: auto;
+	background-color: #240700;
+}
 
 h1{
 	color: rgb(241,114,6);
-	font-size: 6em;
+	font-size: 12em;
 	width: 80%;
 	text-align: center;
 	margin: auto;
@@ -59,79 +43,96 @@ h1{
 	border:double #F1A31D 10px;
 	border-radius: 50px;
 }
+#haut{
+	width: 90%;
+	margin: auto;
+	display: flex;
+}
+
+#circus{
+	width: 100%;
+	height: auto;
+	border-radius: 20px;
+}
 
 #presentation{
 	color: rgb(241,114,6);
-	font-size: 2em;
+	font-size: 4em;
 	text-align: center;
 	margin: auto;
 	padding: 5px;
 }
 
 #bas{
-	margin: auto;
-	width: 95%;
-	height: 100px;
-	background-color: #862605;
-}
-
-#nav{
-	list-style-position: inside;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	flex-wrap: nowrap;
-	width: 95%;
-	height: 95%;
-	margin: auto;
+	background-color: #862605;	
+}
+
+@media all and (max-width: 1024px) {
+	#bas{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.nav {
+    display: flex;
+	list-style-type: none; 
+    padding: 5px;
+	margin: 5px;
+	background-color: #F1A31D;
+	border-radius: 10px;
 }
 
 a{
 	color: #7A97A7;
 	padding: 10px;
 	font-family: "Comic Sans MS";
-	font-size: 0.7em;
-}
-
-.nav {
-    list-style-type: none; 
-    padding: 20px;
 	margin: 10px;
-	background-color: #F1A31D;
-	border-radius: 10px;
 }
 
 #Performances, #About_us, #Prices, #Contact_Us {
 	margin: 10px 10px 10px 50px;
 	padding: 10px;
 	width: 20%;	
-	font-size: 1.75em;
+	font-size: 3em;
 }
 
 #Perf{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-around;
-	margin: 60px;
+	margin: 50px;
+	padding: 10px;
 }
 
+@media all and (max-width: 1024px) {
+	#Perf{
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+}
 #laugh, #dream, #marvel{
 	list-style-type: none;
 	max-width: 350px;
-	min-width: 220px;
+	min-width: 200px;
 	padding: 10px;
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	border : solid #F17206;
+	border-radius: 20px;
 	box-shadow: 20px 10px #F5AF30;
 }
 
 p{
 	margin: 10px;
 	font-family: "Comic Sans MS";
-	font-size: 0.6em;
 	padding: 10px;
 	text-align: justify;
 }
@@ -140,8 +141,15 @@ h3{
 	text-decoration: underlined;
 	text-align: center;
 	margin: 20px;
+	font-size: 2em;
 }
 
+.perform{
+	max-width: 256px;
+	min-width: 140px;
+	height: auto;
+	margin: 10px;
+}
 #About, #Contact{
 	background-color: #862605;
 }
@@ -160,6 +168,7 @@ table {
     empty-cells: hide;
     width: 60%;
     margin:auto;
+	font-size: 1.5em;
 }
 
 td, th {
@@ -169,10 +178,8 @@ td, th {
 }
 
 #formulaire {
-  margin: auto;
-  width:20%; 
-  padding: 10px;
-  text-align: center;
+	text-align: center;
+	padding: 10px;
 }
 
 #message, input{
@@ -183,5 +190,23 @@ td, th {
 }
 
 footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+}
 
+#design, #follow, #law {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@media all and (max-width: 1024px) {
+	#design, #follow, #law {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+}
 }

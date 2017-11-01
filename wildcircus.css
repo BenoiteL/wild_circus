@@ -19,15 +19,18 @@ body {
 }
 
 header{
+
+	background-color: #240700;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	height: auto;
 	background-color: #240700;
-	align-items: center;
+
 }
 
 #haut{
+<<<<<<< HEAD
 	width: 90%;
 	margin: auto;
 	display: flex;
@@ -39,6 +42,8 @@ header{
 #milieu{
 	width: 90%;
 	margin: auto;
+	max-height: 500px;
+	width: 95%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -53,7 +58,6 @@ h1{
 	padding: 10px;
 	border:double #F1A31D 10px;
 	border-radius: 50px;
-
 }
 
 #presentation{

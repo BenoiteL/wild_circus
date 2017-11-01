@@ -43,6 +43,7 @@ h1{
 	border:double #F1A31D 10px;
 	border-radius: 50px;
 }
+
 #haut{
 	width: 90%;
 	margin: auto;
@@ -73,7 +74,7 @@ h1{
 @media all and (max-width: 1024px) {
 	#bas{
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 	}
 }
 
@@ -81,7 +82,7 @@ h1{
     display: flex;
 	list-style-type: none; 
     padding: 5px;
-	margin: 5px;
+	margin: 5px auto;
 	background-color: #F1A31D;
 	border-radius: 10px;
 }
@@ -116,6 +117,7 @@ a{
 		align-items: center;
 }
 }
+
 #laugh, #dream, #marvel{
 	list-style-type: none;
 	max-width: 350px;
@@ -138,7 +140,6 @@ p{
 }
 
 h3{
-	text-decoration: underlined;
 	text-align: center;
 	margin: 20px;
 	font-size: 2em;
@@ -150,6 +151,7 @@ h3{
 	height: auto;
 	margin: 10px;
 }
+
 #About, #Contact{
 	background-color: #862605;
 }

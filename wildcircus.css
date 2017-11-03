@@ -30,7 +30,6 @@ header{
 	flex-direction: column;
 	justify-content: space-around;
 	height: auto;
-	background-color: #240700;
 }
 
 h1{
@@ -44,14 +43,10 @@ h1{
 	border-radius: 50px;
 }
 
-#haut{
+#circus{
 	width: 90%;
 	margin: auto;
 	display: flex;
-}
-
-#circus{
-	width: 100%;
 	height: auto;
 	border-radius: 20px;
 }
@@ -64,15 +59,16 @@ h1{
 	padding: 5px;
 }
 
-#bas{
+#navigation{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: #862605;	
+	padding-left: 0px;
 }
 
 @media all and (max-width: 1024px) {
-	#bas{
+	#navigation{
 		display: flex;
 		flex-direction: column;
 	}
@@ -159,10 +155,18 @@ h3{
 #text_about{
 	margin: auto;
 	font-family: "Comic Sans MS";
-	font-size: 0.6em;
 	padding: 10px;
 	text-align: justify;
-	width: 70%;
+	width: 60%;
+}
+
+#h3_about_us{
+	margin: auto;
+	font-family: "Comic Sans MS";
+	padding: 10px;
+	text-align: justify;
+	width: 60%;
+	font-size: 1.5em;
 }
 
 table {
